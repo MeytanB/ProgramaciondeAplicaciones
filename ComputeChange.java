@@ -4,7 +4,7 @@ import java.util.Scanner;
     public static void main(String[] args) {
       Scanner input = new Scanner(System.in);
       //Lee lo ingresdo DE LA CONSOLA
-      System.out.println("ENter an amount in doble");
+      System.out.println("Enter an amount in doble");
       //Sera lo primero que se mostrara al usuario
       double amount = input.nextDouble();
       //agrerar bariable para el usuario
