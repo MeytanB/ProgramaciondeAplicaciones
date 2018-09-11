@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.lang.Math;
   public class ComputerBMI{
     public static void main(String[] args) {
       Scanner input = new Scanner(System.in);
@@ -7,11 +7,12 @@ import java.util.Scanner;
       final double METERS_PER_INCH = 0.0254;
       //final es para constantes si son de 2 a mas palabras se usa guion bajo
         System.out.println("Enter weight in pounds: ");
-        double weight = input.nextDouble();
+        double Weight = input.nextDouble();
         System.out.println("Enter height in inches: ");
         double Height = input.nextDouble();
-        double weightInKilograms = weight * KILOGRAMS_PER_PUND;
+        double WeightInKilograms = Weight * KILOGRAMS_PER_PUND;
         double HeightInMeters = Height * METERS_PER_INCH;
-        double BMI = 
+        double BMI = WeightInKilograms / (Math.pow (HeightInMeters, 2));
+        System.out.println("Your BMI is: " + BMI);
     }
   }
