@@ -14,20 +14,20 @@ import java.util.Scanner;
     System.out.println("Ingrese el precio por kilo de uva");
     double P = input.nextDouble();
     double GA;
-    if (TI == Tipo && TA == 1){
-      GA = (P * K) - (K * 0.20);
+    if (Tipo.equals(TI) && TA == 1){
+      GA = (P * K) + (K * 0.20);
       System.out.println("El precio inicial agregado por kilo sera de 20 centavos");
     }
-    else if (TI == Tipo && TA == 2){
-      GA = (P * K) - (K * 0.30);
+    else if (Tipo.equals(TI) && TA == 2){
+      GA = (P * K) + (K * 0.30);
       System.out.println("El precio inicial agregado por kilo sera de 30 centavos");
     }
-    else if (TI == Tipoo && TA == 1){
-      GA = (P * K) - (K * -0.30);
+    else if (Tipoo.equals(TI) && TA == 1){
+      GA = (P * K) + (K * -0.30);
       System.out.println("El precio inicial rebajado por kilo sera de 30 centavos");
     }
     else {
-      GA = (P * K) - (K * -0.50);
+      GA = (P * K) + (K * -0.50);
       System.out.println("El precio inicial rebajado por kilo sera de 50 centavos");
     }
     System.out.println("La ganacia total sera de: " + GA);
