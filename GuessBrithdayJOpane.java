@@ -49,6 +49,6 @@ public class GuessBrithdayJOpane{
    if (Answer == JOptionPane.YES_OPTION){
      day = day +16;
    }
-   System.out.println("Your birthday is: " + day);
+   JOptionPane.showMessageDialog(null, "\n Your birthday is: " + day);
   }
 }
