@@ -1,16 +1,13 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
-  public class LitroPorGalon{
+  public class LitroPorGalonCopia{
     public static void main(String[] args) {
-      Scanner input = new Scanner(System.in);
-      System.out.println("Cantidad de litros por galon" + "\n" +
-      "\t" + "Ingresa la cantidad de litros que produce");
-      double L = input.nextDouble();
-      System.out.println("Ingresa el precio por galon");
-      double PG = input.nextDouble();
+      double L = Integer.parseInt(JOptionPane.showInputDialog(null, "Cantidad de litros por galon" + "\n" +
+      "\t" + "Ingresa la cantidad de litros que produce"));
+      double PG = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa el precio por galon"));
       double TG = L / 3.785;
       double GA = PG * TG;
-      System.out.println("Se produgeron: " + TG + " galones\n" +
+      JOptionPane.showMessageDialog(null, "Se produgeron: " + TG + " galones\n" +
       "\t" + "Se ganaron: " + GA);
     }
  }

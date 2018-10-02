@@ -1,14 +1,11 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;;
 
-  public class Sueldo{
+  public class SueldoCopia{
     public static void main(String[] args) {
-      Scanner input = new Scanner(System.in);
-      System.out.println("Sueldo ganado por semana" + "\n" +
-      "\t" + "Ingresa las horas que trabajo durante la semana");
-      double HT = input.nextDouble();
-      System.out.println("Ingresa el pago por hora");
-      double PH = input.nextDouble();
+      double HT = Integer.parseInt(JOptionPane.showInputDialog(null, "Sueldo ganado por semana" + "\n" +
+      "\t" + "Ingresa las horas que trabajo durante la semana"));
+      double PH = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa el pago por hora"));
       double SS = HT*PH;
-      System.out.println("Usted gano : " + SS + " esta semana");
+      JOptionPane.showMessageDialog(null, "Usted gano : " + SS + " esta semana");
     }
  }

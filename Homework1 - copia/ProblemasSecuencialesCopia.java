@@ -1,9 +1,8 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;;
 import java.lang.Math;
 
-  public class ProblemasSecuenciales{
+  public class ProblemasSecuencialesCopia{
     public static void main(String[] args) {
-      Scanner input = new Scanner(System.in);
       double opcion = 0;
       while (opcion <= 8){
       if (opcion == 0){

@@ -1,20 +1,15 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
-  public class Conagua{
+  public class ConaguaCopia{
     public static void main(String[] args) {
-      Scanner input = new Scanner(System.in);
-      System.out.println("Pago que realizaras por metros cubicos consumidos por alberca" + "\n" +
-      "\t" + "Ingresa la altura de la alberca");
-      double A = input.nextDouble();
-      System.out.println("Ingresa el largo de la alberca");
-      double L = input.nextDouble();
-      System.out.println("Ingresa el ancho de la alberca");
-      double N = input.nextDouble();
-      System.out.println("Ingresa el precio por metro cubico");
-      double CM = input.nextDouble();
+      double A =Integer.parseInt(JOptionPane.showInputDialog(null, "Pago que realizaras por metros cubicos consumidos por alberca" + "\n" +
+      "\t" + "Ingresa la altura de la alberca"));
+      double L = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el largo de la alberca"));
+      double N = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa el ancho de la alberca"));
+      double CM = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa el precio por metro cubico"));
       double V = A*L*N;
       double PAG = V*CM;
-      System.out.println("El volumen total de la alberca es: " + V + " metros cubicos\n" +
+      JOptionPane.showMessageDialog(null, "El volumen total de la alberca es: " + V + " metros cubicos\n" +
       "\t" + "El pago que realizara sera de: " + PAG);
     }
  }

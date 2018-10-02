@@ -1,14 +1,11 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;;
 
-  public class Rectangulo{
+  public class RectanguloCopia{
     public static void main(String[] args) {
-      Scanner input = new Scanner(System.in);
-      System.out.println("Quieres saber el area de un rectangulo" + "\n" +
-      "\t" + "Ingresa la altura ");
-      double A = input.nextDouble();
-      System.out.println("Ingresa el ancho ");
-      double B = input.nextDouble();
+      double A = Integer.parseInt(JOptionPane.showInputDialog(null, "Quieres saber el area de un rectangulo" + "\n" +
+      "\t" + "Ingresa la altura "));
+      double B = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa el ancho "));
       double Area = A*B;
-      System.out.println("El area es: " + Area );
+      JOptionPane.showMessageDialog(null, "El area es: " + Area );
     }
   }
