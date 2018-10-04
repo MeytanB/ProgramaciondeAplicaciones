@@ -1,12 +1,9 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
-  public class MayorQue{
+  public class MayorQueCopia{
     public static void main(String[] args){
-    Scanner input = new Scanner(System.in);
-    System.out.println("Ingrese el primer numero");
-    int A = input.nextInt();
-    System.out.println("Ingrese el segundo numero");
-    int B = input.nextInt();
+    int A = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el primer numero"));
+    int B = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el segundo numero"));
     int M;
     if (A > B){
       M = A;
@@ -14,6 +11,6 @@ import java.util.Scanner;
     else{
       M = B;
     }
-    System.out.println("El numero mayor es el: " + M);
+    JOptionPane.showMessageDialog(null, "El numero mayor es el: " + M);
     }
   }

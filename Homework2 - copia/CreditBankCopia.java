@@ -1,13 +1,9 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
-  public class CreditBank{
+  public class CreditBankCopia{
     public static void main(String[] args) {
-      Scanner input = new Scanner(System.in);
-
-      System.out.println("Ingresa tu tipo de targeta que desea aumnetar su credit");
-      double TT = input.nextDouble();
-      System.out.println("Ingresa el limite actual de tu targeta");
-      double LA = input.nextDouble();
+      double TT = Integer.parseInt(JOptionPane.showInputDialog("Ingresa tu tipo de targeta que desea aumentar su credito"));
+      double LA = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el limite actual de tu targeta"));
       double AC;
       if (TT == 1)
       AC = 1.25;
@@ -18,6 +14,6 @@ import java.util.Scanner;
       else
       AC = 1.50;
       double NC = LA * AC;
-      System.out.println("Su nuevo limite de credito es: " + NC);
+      JOptionPane.showMessageDialog(null, "Su nuevo limite de credito es: " + NC);
     }
   }
