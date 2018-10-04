@@ -21,6 +21,6 @@
       System.out.println("I am eating");
     }
     public void sleep(){
-      System.out.println("Z Z Z Z Z Zzzzzz ZZZZZZZ");
+      System.out.println("Z Z Z Z Z Z Zzzzzz ZZZZZZZ");
     }
   }

@@ -16,7 +16,7 @@ public class DogImplement{
     //Trae un valor guardado
     System.out.println(fido.sit());
     fido.sit();
-    fido.layDown("Mi nombre es fido ");
+    fido.layDown("Mi nombre es fido woff");
     fido.sleep();
   }
 }
