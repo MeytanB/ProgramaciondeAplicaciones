@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
     String TI = JOptionPane.showInputDialog("Ingrese A o B dependiendo del tipo de uva");
     int TA = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el tamallo de la uva"));
     int K = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el total en kilos de uva"));
-    double P = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el precio por kilo de uva"));
+    double P = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el precio por kilo de uva"));
     double GA;
     if (Tipo.equals(TI) && TA == 1){
       GA = (P * K) + (K * 0.20);

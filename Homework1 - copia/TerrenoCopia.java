@@ -2,10 +2,10 @@ import javax.swing.JOptionPane;;
 
   public class TerrenoCopia{
     public static void main(String[] args) {
-      double A = Integer.parseInt(JOptionPane.showInputDialog(null, "\n Area de un terreno irregular" + "\n" +
+      double A = Double.parseDouble(JOptionPane.showInputDialog(null, "\n Area de un terreno irregular" + "\n" +
       "\t" + "Ingresa la altura del triangulo y rectangulo unidos "));
-      double B = Integer.parseInt(JOptionPane.showInputDialog(null, "\n Ingresa la base del trangulo y del rectangulo "));
-      double C = Integer.parseInt(JOptionPane.showInputDialog(null, "\n Ingresa la altura del rectangulo "));
+      double B = Double.parseDouble(JOptionPane.showInputDialog(null, "\n Ingresa la base del trangulo y del rectangulo "));
+      double C = Double.parseDouble(JOptionPane.showInputDialog(null, "\n Ingresa la altura del rectangulo "));
       double AT = (C * (A-C))/2;
       double AR = B * C;
       double Area = AT + AR;

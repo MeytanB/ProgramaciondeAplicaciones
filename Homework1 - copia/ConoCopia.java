@@ -3,8 +3,8 @@ import java.lang.Math;
 
   public class ConoCopia{
     public static void main(String[] args) {
-      double R = Integer.parseInt(JOptionPane.showInputDialog(null, "Area de cono helado \n" + "\t" + "Ingresa la base del triangulo rectangulo y radio"));
-      double H = Integer.parseInt(JOptionPane.showInputDialog("Hipotenusa del triangulo rectangulo"));
+      double R = Double.parseDouble(JOptionPane.showInputDialog(null, "Area de cono helado \n" + "\t" + "Ingresa la base del triangulo rectangulo y radio"));
+      double H = Double.parseDouble(JOptionPane.showInputDialog("Hipotenusa del triangulo rectangulo"));
       double C =Math.sqrt ((Math.pow(H, 2))-(Math.pow(R, 2)));
       double AT = (R * C)/2;
       double AC = (Math.PI * (Math.pow (R, 2))) /2;

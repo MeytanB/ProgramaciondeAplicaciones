@@ -2,8 +2,8 @@ import javax.swing.JOptionPane;
 
   public class CreditBankCopia{
     public static void main(String[] args) {
-      double TT = Integer.parseInt(JOptionPane.showInputDialog("Ingresa tu tipo de targeta que desea aumentar su credito"));
-      double LA = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el limite actual de tu targeta"));
+      double TT = Double.parseDouble(JOptionPane.showInputDialog("Ingresa tu tipo de targeta que desea aumentar su credito"));
+      double LA = Double.parseDouble(JOptionPane.showInputDialog("Ingresa el limite actual de tu targeta"));
       double AC;
       if (TT == 1)
       AC = 1.25;
