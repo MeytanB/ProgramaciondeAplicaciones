@@ -2,6 +2,13 @@
       private String courseName;
       private String[] students = new String[100];
       private int numberOfStudents = 0;
+// Se implementa manualmente o se crea uno automaticamente por el programa
+      public Course(){
+
+      }
+      public Course(String CourseName){
+        this.courseName = CourseName;
+      }
 
       public String getCourseName() {
         return this.courseName;
@@ -14,7 +21,12 @@
     this.numberOfStudents ++;
   }
   public void dropStudent(String student){
-
+    for (int j = 0; j <= this.students.length-1; j++){
+      if (student.equals(this.students[j])){
+        this.students[j] = "Este alumno fue eliminado";
+      }else {
+      }
+    }
   }
   public String[] getStudents(){
   return this.students;
